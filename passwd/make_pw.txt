@@ -1,0 +1,4 @@
+! Make the password list txt
+
+
+crunch 8 8 0123456789 -o file_name.txt 
