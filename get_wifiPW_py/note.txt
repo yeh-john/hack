@@ -1,0 +1,8 @@
+# description
+
+https://fossbytes.com/javascripthon-a-simple-python-to-es6-javascript-translator/
+
+
+# video
+
+https://www.youtube.com/watch?v=q_xXFLk-O6Q
