@@ -1,0 +1,22 @@
+*{
+    background-color: rgb(87, 128, 163);
+}
+
+h1{
+    font-size: 25px;
+}
+
+.main{
+    text-align: center;
+}
+
+input{
+    background-color: #fff;
+    margin-top: 10px;
+}
+
+#submit{
+    background-color: rgb(133, 133, 133);
+    margin-top: 10px;
+}
+
