@@ -1,0 +1,7 @@
+# This login form can send result to Google Spread Sheet
+
+# File detail
+index.html
+index.js
+style.css
+index.gas
