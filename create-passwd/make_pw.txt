@@ -1,4 +1,17 @@
-! Make the password list txt
+# This command can make wordlist using crunch
 
+# Install tool
+sudo apt-get install crunch
 
+# Create wordlist
 crunch 8 8 0123456789 -o file_name.txt 
+
+# Description
+-- This is the minimum number of digits
+crunch 8 <- 
+
+-- This is the maximum number of digits
+crunch 8 8 <-
+
+-- This is the number using in wordlists
+crunch 8 8 0123456789 <- 
