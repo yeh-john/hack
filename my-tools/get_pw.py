@@ -1,7 +1,7 @@
 
 # Video link https://www.youtube.com/davidbombal 
 
-#### This program can get password in Windows cmd or powershell
+#### This program can get wifi password in Windows cmd or powershell
 
 import subprocess
 import re
