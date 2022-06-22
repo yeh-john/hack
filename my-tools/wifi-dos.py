@@ -46,7 +46,7 @@ def main():
             print("[!] ERROR : Dos amount error")
             exit(0)
         
-
+# Start command
 if __name__ == '__main__':
     try:
         os.system('clear')
