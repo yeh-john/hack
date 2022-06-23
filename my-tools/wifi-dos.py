@@ -45,6 +45,9 @@ def main():
         elif len(dos_amt) < 1:
             print("[!] ERROR : Dos amount error")
             exit(0)
+            
+       ### FIX LINK ###
+       # https://stackoverflow.com/questions/20652527/python-try-except-with-of-if-else
         
 # Start command
 if __name__ == '__main__':
