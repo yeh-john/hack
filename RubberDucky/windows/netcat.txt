@@ -2,3 +2,6 @@ DELAY 1000
 
 ### Link
 https://eternallybored.org/misc/netcat/
+
+
+# You need to send ip to your mail
