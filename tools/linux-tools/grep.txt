@@ -1,0 +1,9 @@
+###### GREP TUTORIAL ######
+
+
+# Output result to text file
+grep "abc" filename.txt > output.txt
+
+
+# Grep minmum 8 character text
+grep "........" filename.txt
