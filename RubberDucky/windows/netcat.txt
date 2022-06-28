@@ -5,3 +5,6 @@ https://eternallybored.org/misc/netcat/
 
 
 # You need to send ip to your mail
+
+
+# the mail you need to use anonymous mail
