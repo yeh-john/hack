@@ -17,7 +17,7 @@ STRING start "temp.bat"
 DELAY 200
 ENTER
 DELAY 10000
-STRING exit
+STRING exit  ------- End command ??
 DELAY 200
 ENTER
 DELAY 200
