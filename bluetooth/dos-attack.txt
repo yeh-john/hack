@@ -1,4 +1,4 @@
-######## This command can dos attack Bluetooth device
+######## This command can dos attack Bluetooth device ############
 
 
 # Check Bluetooth adapter
