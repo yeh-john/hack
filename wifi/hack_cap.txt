@@ -1,0 +1,15 @@
+# Get cap file
+target.cap
+
+# Convert file
+sudo /usr/share/hashcat-utils/cap2hccapx.bin target.cap target.hccapx
+
+# Check file converted
+cd /home/kali/hs && ls
+
+##########################
+# Copy file to gpu pc
+##########################
+
+
+# Start hashcat to crack
