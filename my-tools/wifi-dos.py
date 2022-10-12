@@ -26,7 +26,7 @@ def main():
     # Ask permision
     print('\x1b[32m USE OF THIS SOFTWARE IS AT YOUR OWN RISK. THE DEVELOPER SHALL NOT BE LIABLE FOR ANY DAMAGES RESULTING FROM THE USE OF THIS SOFTWARE.')
     if (input("Do you agree? [Y/n] >") in ['Y','y']):
-        time.sleep(0.1)
+        time.sleep(0.2)
         os.system('clear')
         printLogo()
         print('')
