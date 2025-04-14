@@ -22,8 +22,13 @@ D:/Windows/System32
 7. Rename utilman.exe to other name
 ren utilman.exe utilman2.exe
 
-8. Copy cmd.exe to utilman.exe
+8A. Copy cmd.exe to utilman.exe OR
 copy cmd.exe utilman.exe
+
+8B. If utilman.exe is missing or patched, another accessibility tool like sethc.exe (Sticky Keys) can be used:
+BETTER < At login screen, press Shift key 5 times to launch cmd
+copy cmd.exe sethc.exe
+
 
 9. Exit command prompt
 Exit
