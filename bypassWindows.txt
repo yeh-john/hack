@@ -23,7 +23,7 @@ D:/Windows/System32
 ren utilman.exe utilman2.exe
 
 8. Copy cmd.exe to utilman.exe
-cp cmd.exe utilman.exe
+copy cmd.exe utilman.exe
 
 9. Exit command prompt
 Exit
